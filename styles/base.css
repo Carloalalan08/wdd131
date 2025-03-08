@@ -70,36 +70,26 @@ main {
 }
 
 main img {
-    width: 30%;
-    /* Makes all images take full width of their container */
+    max-width: 30%;
     height: auto;
-    /* Sets a fixed height */
     object-fit: cover;
-    /* Ensures images maintain aspect ratio without distortion */
     border-radius: 8px;
-    /* Optional: Adds rounded corners */
 }
 
 .long-section .content-layout {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* Allows wrapping for smaller screens */
     align-items: flex-start;
-    /* Adds space between image and text */
 }
 
 .long-section img {
-    max-width: 40%;
-    /* Adjust image size */
     height: auto;
     border-radius: 8px;
-    /* Optional: rounded corners */
 }
 
 .text-content {
     flex: 1;
-    /* Allows text to take remaining space */
     text-align: justify;
 }
 
@@ -107,13 +97,11 @@ main img {
     background: #BFC1C0;
     padding: 15px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
     display: block;
     margin: 10px 0;
 }
