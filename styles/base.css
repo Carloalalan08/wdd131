@@ -1,7 +1,7 @@
 /* Base CSS Styles */
 
 :root {
-    --dark-green: #202C2B;
+    --dark-green: #8EAFBD;
     --dark-blue: #242A3A;
     --brown: #2E241D;
     --dark-red: #251115;
@@ -14,7 +14,7 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #BFC1C0;
+    background-color: #8EAFBD;
     color: #242A3A;
 }
 
@@ -65,7 +65,7 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: #BFC1C0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #251115;
 }
@@ -95,7 +95,7 @@ main img {
 }
 
 .card {
-    background: #BFC1C0;
+    background: white;
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
