@@ -1,17 +1,25 @@
 /* Base CSS Styles */
 
+:root {
+    --dark-green: #202C2B;
+    --dark-blue: #242A3A;
+    --brown: #2E241D;
+    --dark-red: #251115;
+    --light-gray: #BFC1C0;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #BFC1C0;
+    color: #242A3A;
 }
 
 header {
-    background-color: #333;
+    background-color: #242A3A;
     color: white;
     padding: 20px;
     text-align: center;
@@ -50,7 +58,7 @@ main {
 }
 
 .card {
-    background: #fff;
+    background: #BFC1C0;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
@@ -67,7 +75,7 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #242A3A;
     color: white;
     margin-top: 20px;
 }
