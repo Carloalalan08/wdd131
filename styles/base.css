@@ -105,8 +105,9 @@ main img {
 
 .card img {
     display: block;
-    margin: 10px 0;
-}
+    margin-right: 15px;
+    margin-bottom: 10px;
+    float: left;}
 
 footer {
     text-align: center;
