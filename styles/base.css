@@ -57,6 +57,27 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.long-section .content-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Adds space between image and text */
+}
+
+.long-section img {
+    max-width: 40%;
+    /* Adjust image size */
+    height: auto;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
+.text-content {
+    flex: 1;
+    /* Allows text to take remaining space */
+    text-align: justify;
+}
+
 .card {
     background: #BFC1C0;
     padding: 15px;
