@@ -1,0 +1,84 @@
+/* Mobile-First CSS (temples.css) */
+:root {
+    --dark-green: #8EAFBD;
+    --dark-blue: #242A3A;
+    --brown: #2E241D;
+    --dark-red: #251115;
+    --light-gray: #BFC1C0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-green);
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none; /* Hidden by default for mobile */
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger Button */
+#menu-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column in mobile */
+    gap: 15px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
