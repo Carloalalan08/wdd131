@@ -1,0 +1,93 @@
+/* Global Styles */
+:root {
+    --dark-green: #8EAFBD;
+    --dark-blue: #242A3A;
+    --brown: #2E241D;
+    --dark-red: #251115;
+    --light-gray: #BFC1C0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8EAFBD;
+    color: var(--text-color);
+    text-align: center;
+}
+
+header {
+    background: #242A3A;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.weather, .country-info {
+    background: rgba(148, 210, 189, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1; 
+    min-width: 280px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.country-info {
+    background: rgba(188, 143, 143, 0.8); /* Light red tone */
+}
+
+.country-info p, .weather p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Weather Icon as a Pseudo-Element */
+.weather h2::after {
+    content: "⛅"; /* Emoji for weather */
+    margin-left: 10px;
+}
+
+footer {
+    background: #242A3A;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

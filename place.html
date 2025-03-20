@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Philippines - WDD 131">
+    <meta name="author" content="Mon Carlo Alalan">
+    <title>Discover the Philippines</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Discover the Philippines</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://makeyourasia.com/philippines/filipino-culture.html">Culture</a></li>
+                <li><a href="https://www.tripadvisor.com.ph/Attractions-g294245-Activities-c47-Philippines.html">Landmarks</a></li>
+                <li><a href="https://beta.tourism.gov.ph/contact-us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1024px)">
+                <img src="images/hero-large.webp" alt="Philippines Scenery">
+            </picture>
+        </section>
+
+        <div class="info-container">
+            <section class="weather">
+                <h2>Weather <span class="weather-icon"></span></h2>
+                <p><strong>Temperature:</strong> <span id="temperature">8</span>°C</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeed">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></p>
+            </section>
+
+            <!-- Country Info Section -->
+            <section class="country-info">
+                <h2>About the Philippines</h2>
+                <p><strong>Official Name:</strong> Republic of the Philippines</p>
+                <p><strong>Capital:</strong> Manila</p>
+                <p><strong>Area:</strong> 300,000 km²</p>
+                <p><strong>Population:</strong> 113 million (2024)</p>
+                <p><strong>Official Language:</strong> Filipino, English</p>
+                <p><strong>Currency:</strong> Philippine Peso (PHP)</p>
+                <p><strong>Time Zone:</strong> GMT+8</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Mon Carlo Alalan - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
