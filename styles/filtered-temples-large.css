@@ -1,0 +1,36 @@
+/* Larger Screen Styles (filtered-temples-large.css) */
+@media only screen and (min-width: 768px) {
+    /* Center navigation buttons */
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    nav button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        background-color: #242A3A;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    nav button:hover {
+        background-color: #8EAFBD;
+    }
+
+    #menu-btn {
+        display: none; /* Hide hamburger button on larger screens */
+    }
+
+    /* Adjust Gallery Layout */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    }
+
+    .gallery img {
+        height: 250px; /* Slightly larger images on bigger screens */
+    }
+}
