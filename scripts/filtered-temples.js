@@ -49,7 +49,27 @@ document.addEventListener("DOMContentLoaded", function () {
             area: 116642,
             imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
         },
-        // ADD THREE MORE TEMPLES HERE
+        {
+            templeName: "Manila Philippines",
+            location: "Metro Manila, Philippines",
+            dedicated: "1984, September, 25",
+            area: 26683,
+            imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+        },
+        {
+            templeName: "Cebu City Philippines",
+            location: "Cebu Philippiness",
+            dedicated: "2010, June, 13",
+            area: 29556,
+            imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/133-Cebu-City-Philippines-Temple.jpg"
+        },
+        {
+            templeName: "Urdaneta Philippines",
+            location: "Pangasinan Philippines",
+            dedicated: "2024, April, 28",
+            area: 32604,
+            imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/urdaneta-philippines-temple/urdaneta-philippines-temple-45874-main.jpg"
+        },
     ];
 
     const gallery = document.querySelector(".gallery");
