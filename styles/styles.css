@@ -1,0 +1,170 @@
+/* Base CSS Styles */
+:root {
+    --dark-green: #8EAFBD;
+    --dark-blue: #242A3A;
+    --brown: #2E241D;
+    --dark-red: #251115;
+    --light-gray: #BFC1C0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Abril Fatface", serif;
+    font-size: 2rem;
+    color: var(--dark-green);
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--light-gray);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--dark-red);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"], input[type="date"], textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--dark-red);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--dark-blue);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: var(--light-gray);
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: var(--dark-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--brown);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark-blue);
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Review Page Specific Styles */
+.review-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--dark-red);
+    margin-top: 20px;
+}
+
+.review-container h3 {
+    font-family: "Abril Fatface", serif;
+    font-size: 1.8rem;
+    color: var(--dark-green);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.review-container p {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.review-footer {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark-blue);
+    margin-top: 20px;
+}
+
+/* Responsive styles for review page */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    .review-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .review-container p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

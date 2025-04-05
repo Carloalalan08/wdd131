@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review Confirmation">
+    <meta name="author" content="Your Name">
+    <title>Review Confirmation</title>
+
+    <!-- Link to the styles.css file -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+
+    <main>
+        <!-- Review Confirmation Section -->
+        <section class="review-container">
+            <h3>Thank you for your review!</h3>
+            <p>Your review has been successfully submitted. This is review number: <span id="reviewCount"></span>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Mon Carlo Alalan - Review Confirmation</p>
+    </footer>
+
+    <script>
+        // Display the review count from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const reviewCount = urlParams.get("reviews");
+        document.getElementById("reviewCount").textContent = reviewCount;
+
+        // Set current year dynamically
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
