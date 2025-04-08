@@ -58,7 +58,7 @@ function createModals(products) {
                 <span class="close-modal" onclick="closeModal('${product.id}')">&times;</span>
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
-                <p><strong>Price:</strong> $${product.price}</p>
+                <p><strong>Price:</strong> ₱${product.price}</p>
                 <p>${product.details}</p>
             </div>
         `;
