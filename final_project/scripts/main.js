@@ -1,33 +1,57 @@
-// DOM Interactions, Conditional, Arrays, LocalStorage
-document.addEventListener("DOMContentLoaded", () => {
-    const quoteForm = document.getElementById("quoteForm");
-    const result = document.getElementById("quoteResult");
+// Modal operations: Show and Close
+function showModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
+  }
   
-    if (quoteForm) {
-      quoteForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+  }
   
-        const service = document.getElementById("service").value;
-        const quantity = parseInt(document.getElementById("quantity").value);
-        const prices = {
-          "Business Card": 3,
-          Flyer: 5,
-          Tarpaulin: 10,
-          Brochure: 7,
-        };
+  // Quote Calculator logic
+  document.getElementById("quoteForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const service = document.getElementById("service").value;
+    const quantity = document.getElementById("quantity").value;
+    let price;
   
-        if (!prices[service] || quantity <= 0) {
-          result.textContent = "Please select a valid service and quantity.";
-          return;
-        }
-  
-        const estimate = prices[service] * quantity;
-        result.textContent = `Estimated price for ${quantity} ${service}(s): ₱${estimate}.`;
-  
-        const history = JSON.parse(localStorage.getItem("quoteHistory")) || [];
-        history.push({ service, quantity, estimate });
-        localStorage.setItem("quoteHistory", JSON.stringify(history));
-      });
+    // Set pricing based on selected service
+    if (service === "Business Card") {
+      price = 20;
+    } else if (service === "Flyer") {
+      price = 35;
+    } else if (service === "Tarpaulin") {
+      price = 50;
+    } else if (service === "Brochure") {
+      price = 50;
     }
+  
+    // Calculate total price
+    const total = price * quantity;
+    document.getElementById("quoteResult").textContent = `Your estimated total is: $${total}`;
+  });
+  
+  // Example of additional JavaScript for interactions or data validation (if any)
+  function validateForm() {
+    // Example validation for the quote form
+    const quantity = document.getElementById("quantity").value;
+    if (quantity < 1) {
+      alert("Quantity must be at least 1.");
+      return false;
+    }
+    return true;
+  }
+  
+  // Function for spotlight section hover (optional enhancement)
+  const productCards = document.querySelectorAll('.product-card');
+  
+  productCards.forEach(card => {
+    card.addEventListener('mouseover', function() {
+      this.style.backgroundColor = '#e0e0e0'; // Change background on hover
+    });
+    
+    card.addEventListener('mouseout', function() {
+      this.style.backgroundColor = ''; // Reset background on mouse out
+    });
   });
   

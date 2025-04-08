@@ -79,6 +79,134 @@
     background-color: var(--dark);
   }
 
+  :root {
+    --primary: #21DEF2;
+    --secondary: #F31976;
+    --background: #FFFFFF;
+    --accent: #FDA7E9;
+    --dark: #19236D;
+}
+
+#spotlight {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack heading and cards vertically */
+    align-items: center;
+}
+
+.spotlight-heading {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--dark);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    position: relative;
+}
+
+.product-card {
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--secondary);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--background);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    transform: translateY(0);
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card button:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+    color: var(--dark);
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: var(--secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
