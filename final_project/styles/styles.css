@@ -259,6 +259,33 @@
     border-radius: 8px;
   }
 
+  .contact-info {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 1.1em;
+  }
+  
+  .contact-link {
+    display: inline-flex;
+    align-items: left;
+    text-decoration: none;
+    color: var(--dark);
+    margin: 10px 0;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .contact-link:hover {
+    color: var(--secondary);
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(41%) saturate(1415%) hue-rotate(206deg) brightness(95%) contrast(96%);
+  }  
+
   footer a {
     color: var(--dark);
     width: 100%;
