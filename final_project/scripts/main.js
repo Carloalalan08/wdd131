@@ -28,7 +28,7 @@ function showModal(modalId) {
   
     // Calculate total price
     const total = price * quantity;
-    document.getElementById("quoteResult").textContent = `Your estimated total is: $${total}`;
+    document.getElementById("quoteResult").textContent = `Your estimated total is: ₱${total}`;
   });
   
   // Example of additional JavaScript for interactions or data validation (if any)
