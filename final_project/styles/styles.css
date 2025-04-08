@@ -41,8 +41,21 @@
     color: var(--dark);
     padding: 1rem;
     text-align: center;
+    justify-content: center;
   }
   
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 70px; /* Adjust size of logo */
+    height: auto;
+    margin-right: 15px; /* Space between logo and title */
+  }
+
   nav {
     background-color: var(--accent);
     padding: 0.5rem;
