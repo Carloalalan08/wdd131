@@ -274,7 +274,7 @@
     nav ul {
       display: none; /* Hide the menu by default */
       width: 100%;
-      background-color: #fff; /* Optional background color for mobile */
+      background-color: var(--accent); /* Optional background color for mobile */
       position: absolute;
       top: 1rem; /* Adjust based on your header height */
       left: 0;
