@@ -31,6 +31,11 @@
     color: var(--dark);
   }
   
+  .hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+  }
+
   header, footer {
     background-color: var(--primary);
     color: var(--dark);
@@ -44,12 +49,23 @@
   }
   
   nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
+    width: 100%;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
   }
   
+  nav ul.show {
+    display: block;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
   nav li {
     margin: 0 1rem;
   }
@@ -78,14 +94,6 @@
   button:hover {
     background-color: var(--dark);
   }
-
-  :root {
-    --primary: #21DEF2;
-    --secondary: #F31976;
-    --background: #FFFFFF;
-    --accent: #FDA7E9;
-    --dark: #19236D;
-}
 
 #spotlight {
     margin-top: 40px;
@@ -223,3 +231,29 @@
     color: var(--dark);
   }
   
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger on small screens */
+    }
+  
+    nav ul {
+      display: none; /* Hide the menu by default */
+      width: 100%;
+      background-color: #fff; /* Optional background color for mobile */
+      position: absolute;
+      top: 60px; /* Adjust based on your header height */
+      left: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    nav ul.show {
+      display: block; /* Show menu when hamburger is clicked */
+    }
+  
+    nav ul li {
+      display: block; /* Stack menu items vertically */
+      padding: 15px;
+    }
+  }
