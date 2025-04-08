@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bigger Whale | Home</title>
+  <meta name="description" content="Bigger Whale is your creative and reliable printing press."/>
+  <meta name="author" content="Mon Carlo Alalan" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>Bigger Whale Printing Press</h1>
+    <p>Your vision, perfectly printed.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Bigger Whale is a premier printing press committed to quality, affordability, and speed. We serve businesses and individuals with custom prints tailored to your needs.</p>
+    </section>
+
+    <section>
+      <h2>Testimonials</h2>
+      <blockquote>"Excellent service and stunning prints!" – Ana D.</blockquote>
+      <blockquote>"They helped our business stand out. Highly recommend!" – Jomar S.</blockquote>
+    </section>
+
+    <section>
+      <h2>Quote Calculator</h2>
+      <form id="quoteForm">
+        <label for="service">Select a service:</label>
+        <select id="service" name="service">
+          <option value="Business Card">Business Card</option>
+          <option value="Flyer">Flyer</option>
+          <option value="Tarpaulin">Tarpaulin</option>
+          <option value="Brochure">Brochure</option>
+        </select>
+        <br />
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required />
+        <br />
+        <button type="submit">Get Estimate</button>
+      </form>
+      <p id="quoteResult"></p>
+    </section>
+
+    <section>
+      <h2>News & Updates</h2>
+      <p>We're launching a promo this April — 10% off on tarpaulin printing!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bigger Whale Printing Press</p>
+    <a href="references.html">References</a>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
