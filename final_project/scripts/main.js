@@ -55,3 +55,29 @@ function showModal(modalId) {
     });
   });
   
+  // About Us: Owner and Staff modal logic
+document.getElementById('ownerCard').addEventListener('click', () => {
+  showModal('ownerModal');
+});
+
+document.getElementById('staffCard').addEventListener('click', () => {
+  showModal('staffModal');
+});
+
+document.getElementById('closeOwner').addEventListener('click', () => {
+  closeModal('ownerModal');
+});
+
+document.getElementById('closeStaff').addEventListener('click', () => {
+  closeModal('staffModal');
+});
+
+// Optional: Close modal when clicking outside of modal content
+window.addEventListener('click', (event) => {
+  if (event.target === document.getElementById('ownerModal')) {
+    closeModal('ownerModal');
+  }
+  if (event.target === document.getElementById('staffModal')) {
+    closeModal('staffModal');
+  }
+});

@@ -127,6 +127,31 @@
     background-color: var(--dark);
   }
 
+  .about-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: left;
+    margin-top: 1.5rem;
+  }
+  
+  .about-card {
+    max-width: 280px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .about-photo {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-card:hover .about-photo {
+    transform: scale(1.05);
+  }
+
 #spotlight {
     margin-top: 40px;
     text-align: center;
@@ -230,6 +255,13 @@
     width: 80%;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .close-modal {
