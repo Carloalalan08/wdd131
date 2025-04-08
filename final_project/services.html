@@ -33,31 +33,59 @@
   <main>
     <section>
       <h2>What We Offer</h2>
-      <ul>
-        <li><strong>Business Cards</strong> – Custom, sleek cards to make your business stand out.</li>
-        <li><strong>Flyers</strong> – Eye-catching promotional materials for any event.</li>
-        <li><strong>Tarpaulins</strong> – High-resolution banners for indoor and outdoor display.</li>
-        <li><strong>Brochures</strong> – Folded, informative prints perfect for marketing.</li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>Sample Prices</h2>
-      <ul>
-        <li>Business Cards – ₱3 each</li>
-        <li>Flyers – ₱5 each</li>
-        <li>Tarpaulin – ₱10 per sq.ft</li>
-        <li>Brochures – ₱7 each</li>
+      <h3>Main Services</h3>
+      <ul class="service-list">
+        <li onclick="openServiceModal('tarpaulin')">Tarpaulin</li>
+        <li onclick="openServiceModal('panaflex')">Panaflex</li>
+        <li onclick="openServiceModal('sticker')">Sticker</li>
+        <li onclick="openServiceModal('signage')">Signage</li>
+        <li onclick="openServiceModal('tshirt')">T-shirt</li>
+      </ul>
+
+      <h3>Sub Services</h3>
+      <ul class="service-list">
+        <li onclick="openServiceModal('autocad')">Autocad Printing</li>
+        <li onclick="openServiceModal('embroidery')">Embroidery</li>
+        <li onclick="openServiceModal('acrylic')">Acrylic</li>
+        <li onclick="openServiceModal('sintra')">Sintra</li>
+      </ul>
+
+      <h3>Other Services Offered</h3>
+      <ul class="service-list">
+        <li onclick="openServiceModal('plaque')">Plaque</li>
+        <li onclick="openServiceModal('glass')">Glass Frame</li>
+        <li onclick="openServiceModal('tiles')">Tiles Frame</li>
+        <li onclick="openServiceModal('pvc')">PVC ID</li>
+        <li onclick="openServiceModal('menu')">Menu Board</li>
+        <li onclick="openServiceModal('photo')">Photo Printing</li>
+        <li onclick="openServiceModal('carsticker')">Car Sticker</li>
+        <li onclick="openServiceModal('acrylicsign')">Acrylic Signage</li>
+        <li onclick="openServiceModal('sintraboard')">Sintra Board</li>
+        <li onclick="openServiceModal('standee')">Standee</li>
+        <li onclick="openServiceModal('supplies')">Printing Supplies</li>
+        <li onclick="openServiceModal('lamination')">Lamination</li>
       </ul>
     </section>
   </main>
 
+  <!-- Modal Section -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeServiceModal()">×</span>
+      <h2 id="serviceTitle"></h2>
+      <p id="servicePrice"></p>
+      <p id="serviceDescription"></p>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; <span id="currentMonth"></span> <span id="currentYear"></span> Bigger Whale Printing Press</p>
+    <p>&copy; <span id="currentMonth"></span> <span id="currentYear"></span>  <strong>Bigger Whale Enterprises</strong>   by Mon Carlo Alalan</p>
     <a href="references.html">References</a>
-  </footer>  
+  </footer>   
 
   <!-- Include JavaScript Files -->
+  <script src="scripts/services.js"></script>
   <script src="scripts/date.js"></script>
   <script src="scripts/discover.js"></script>
   <script src="scripts/form-confirmation.js"></script>

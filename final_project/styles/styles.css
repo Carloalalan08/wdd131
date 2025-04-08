@@ -211,7 +211,7 @@
 
 .product-card p {
     font-size: 1em;
-    color: #555;
+    color: var(--dark);
     line-height: 1.4;
     margin-bottom: 15px;
 }
@@ -251,7 +251,7 @@
     background-color: #fff;
     margin: 10% auto;
     padding: 30px;
-    border: 1px solid #888;
+    border: 1px solid var(--secondary);
     width: 80%;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -279,6 +279,32 @@
     cursor: pointer;
 }
 
+.close-btn {
+  color: var(--primary);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.service-list li {
+  cursor: pointer; /* Change the cursor to a pointer to indicate clickability */
+  text-decoration: underline; /* Underline the text */
+  transition: text-decoration 0.3s ease; /* Smooth transition for the underline effect */
+}
+
+/* Optional: Remove underline if you prefer only on hover */
+.service-list li:hover {
+  text-decoration: none; /* Remove the underline when hovering */
+  color: var(--primary); /* Change text color on hover to indicate interaction */
+}
+
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -286,10 +312,13 @@
   }
 
   .portfolio-grid img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make images fill the grid cell */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the images cover the area of the div without distortion */
     border-radius: 8px;
-  }
+    border: 1px solid var(--secondary); /* Optional: Add rounded corners to images */
+    transition: transform 0.3s ease-in-out; /* Optional: Smooth hover effect */
+  }  
 
   .contact-info {
     margin-top: 40px;
@@ -321,6 +350,7 @@
   footer a {
     color: var(--dark);
     width: 100%;
+    font-weight: bold;
   }
   
 
