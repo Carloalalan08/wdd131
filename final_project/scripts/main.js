@@ -42,19 +42,6 @@ function showModal(modalId) {
     return true;
   }
   
-  // Function for spotlight section hover (optional enhancement)
-  const productCards = document.querySelectorAll('.product-card');
-  
-  productCards.forEach(card => {
-    card.addEventListener('mouseover', function() {
-      this.style.backgroundColor = '#e0e0e0'; // Change background on hover
-    });
-    
-    card.addEventListener('mouseout', function() {
-      this.style.backgroundColor = ''; // Reset background on mouse out
-    });
-  });
-  
   // About Us: Owner and Staff modal logic
 document.getElementById('ownerCard').addEventListener('click', () => {
   showModal('ownerModal');

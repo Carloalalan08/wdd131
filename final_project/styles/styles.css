@@ -85,7 +85,7 @@
     padding: 10px 20px;
     background-color: var(--background); /* Default background */
     border-radius: 25px; /* Rounded corners to make it button-like */
-    border: 2px solid transparent; /* No border by default */
+    border: 1px solid var(--dark);
     transition: background-color 0.3s, transform 0.3s;
   }
 
@@ -191,8 +191,9 @@
 }
 
 .product-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-15px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  background-color: #e0e0e0; /* ← Change bg on hover using CSS only */
 }
 
 .product-card h3 {
