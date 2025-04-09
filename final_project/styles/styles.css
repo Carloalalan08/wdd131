@@ -1,7 +1,7 @@
 /* Base styling with the provided color scheme */
 :root {
     --primary: #21DEF2;
-    --secondary: #F31976;
+    --secondary: #E822AE;
     --background: #FFFFFF;
     --accent: #FDA7E9;
     --dark: #19236D;
@@ -57,7 +57,7 @@
   }
 
   nav {
-    background-color: var(--accent);
+    background-color: var(--secondary);
     padding: 0.5rem;
   }
   
@@ -181,10 +181,10 @@
     width: 350px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--dark);
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    background-color: var(--background);
+    background-color: #A1ECF7;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     transform: translateY(0);
@@ -248,10 +248,10 @@
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #A1ECF7;
     margin: 10% auto;
     padding: 30px;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--dark);
     width: 80%;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -312,12 +312,12 @@
   }
 
   .portfolio-grid img {
-    width: 100%; /* Make images fill the grid cell */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensures the images cover the area of the div without distortion */
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
-    border: 1px solid var(--secondary); /* Optional: Add rounded corners to images */
-    transition: transform 0.3s ease-in-out; /* Optional: Smooth hover effect */
+    border: 1px solid var(--dark);
+    transition: transform 0.3s ease-in-out;
   }  
 
   .contact-info {
