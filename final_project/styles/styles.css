@@ -219,7 +219,7 @@
 
 .product-card button {
     padding: 10px 20px;
-    background-color: var(--primary);
+    background-color: var(--dark);
     color: white;
     border: none;
     border-radius: 5px;
@@ -347,6 +347,82 @@
     margin-right: 10px;
     filter: brightness(0) saturate(100%) invert(9%) sepia(41%) saturate(1415%) hue-rotate(206deg) brightness(95%) contrast(96%);
   }  
+
+/* Basic styling for the discover container */
+#discover-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.discover-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.discover-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header i {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.card-body {
+  margin: 15px 0;
+  color: var(--dark);
+}
+
+.card-footer {
+  text-align: right;
+}
+
+.date {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Button style */
+.button {
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--dark);
+}
+
+.announcement {
+  border-left: 5px solid var(--primary);
+}
+
+.promo {
+  border-left: 5px solid var(--accent);
+}
+
+.new_service {
+  border-left: 5px solid var(--secondary);
+}
 
   footer a {
     color: var(--dark);
