@@ -67,24 +67,22 @@
         <div id="spotlight-container"></div>
       </section>
 
-    <section>
-      <h2>Quote Calculator</h2>
-      <form id="quoteForm">
-        <label for="service">Select a service:</label>
-        <select id="service" name="service">
-          <option value="Signage">Signage</option>
-          <option value="Flyer">Flyer</option>
-          <option value="Tarpaulin">Tarpaulin</option>
-          <option value="T-Shirt">T-Shirt</option>
-        </select>
-        <br />
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" required />
-        <br />
-        <button type="submit">Get Estimate</button>
-      </form>
-      <p id="quoteResult"></p>
-    </section>
+      <section>
+        <h2>Quote Calculator</h2>
+        <form id="quoteForm">
+          <label for="service">Select a service:</label>
+          <select id="service" name="service" required>
+            <option value="">-- Select a service --</option>
+          </select>
+          <br />
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required />
+          <br />
+          <button type="submit">Get Estimate</button>
+        </form>
+        <p id="quoteResult"></p>
+      </section>
+      
 
     <section>
       <h2>News & Updates</h2>
