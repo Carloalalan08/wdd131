@@ -4,7 +4,7 @@
     "name": "Tarpaulin",
     "description": "Durable, full-color banners for indoor and outdoor use.",
     "price": 10,
-    "image": "tarpaulin.jpg",
+    "image": "tarpaulin.jpeg",
     "details": "Ideal for events, promos, and signages. Printed in vivid color and long-lasting material."
   },
   {
@@ -36,7 +36,7 @@
     "name": "T-shirt Printing",
     "description": "High-quality shirt printing with your custom design.",
     "price": 180,
-    "image": "Sublimation_Shrt.jpg",
+    "image": "Sublimation_Shirt.jpg",
     "details": "Design your own shirts for events, brands, or gifts using vibrant, durable prints."
   },
   {
@@ -64,14 +64,6 @@
     "details": "Sleek and stylish signage or decorative elements made with precision-cut acrylic."
   },
   {
-    "id": "sintra",
-    "name": "Sintra",
-    "description": "Rigid and lightweight boards for indoor displays.",
-    "price": 150,
-    "image": "sintra.jpg",
-    "details": "Ideal for presentations and exhibitions with a clean and professional look."
-  },
-  {
     "id": "plaque",
     "name": "Plaque",
     "description": "Elegant commemorative plaques with engraving.",
@@ -86,14 +78,6 @@
     "price": 300,
     "image": "glass-frame.jpg",
     "details": "Frame your photos or documents in elegant, modern glass frames."
-  },
-  {
-    "id": "tiles-frame",
-    "name": "Tiles Frame",
-    "description": "Printed ceramic tiles in decorative frames.",
-    "price": 350,
-    "image": "tiles.jpg",
-    "details": "Make memorable gifts or awards using personalized ceramic tile frames."
   },
   {
     "id": "pvc-id",
@@ -116,7 +100,7 @@
     "name": "Photo Printing",
     "description": "High-resolution photo prints on glossy paper.",
     "price": 10,
-    "image": "photo-printing.jpg",
+    "image": "photo-printing.png",
     "details": "Turn your moments into vibrant photo keepsakes."
   },
   {
@@ -174,5 +158,13 @@
     "price": 15,
     "image": "Button_Pin.jpg",
     "details": "Design your own button pins for branding, campaigns, or personal expression—durable and stylish!"
-  }
+  },
+  {
+    "id": "personalized-invitations",
+    "name": "Personalized Invitations",
+    "description": "Custom invitation cards for weddings, birthdays, and special events.",
+    "price": 25,
+    "image": "personalized_invitations.jpg",
+    "details": "Make your event unforgettable with beautifully designed, personalized invitations tailored to your theme and style."
+  }  
 ]
