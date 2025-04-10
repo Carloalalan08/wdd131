@@ -36,7 +36,7 @@
     "name": "T-shirt Printing",
     "description": "High-quality shirt printing with your custom design.",
     "price": 180,
-    "image": "tshirt.jpg",
+    "image": "Sublimation_Shrt.jpg",
     "details": "Design your own shirts for events, brands, or gifts using vibrant, durable prints."
   },
   {
@@ -76,7 +76,7 @@
     "name": "Plaque",
     "description": "Elegant commemorative plaques with engraving.",
     "price": 500,
-    "image": "plaque.jpg",
+    "image": "Plaque_7.jpg",
     "details": "Mark milestones or achievements with custom-designed plaques suited for any occasion."
   },
   {
@@ -166,5 +166,13 @@
     "price": 10,
     "image": "lamination.jpg",
     "details": "Glossy or matte finish lamination to protect important documents and prints."
+  },
+  {
+    "id": "button-pin",
+    "name": "Button Pin",
+    "description": "Customized button pins for events, giveaways, or promotions.",
+    "price": 15,
+    "image": "Button_Pin.jpg",
+    "details": "Design your own button pins for branding, campaigns, or personal expression—durable and stylish!"
   }
 ]
