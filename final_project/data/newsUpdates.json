@@ -3,7 +3,7 @@
         "type": "announcement",
         "title": "Important Announcement: Temporary Closure",
         "description": "We will be closed for maintenance from April 15th to April 17th. We apologize for the inconvenience and thank you for your understanding.",
-        "date": "April 10, 2025",
+        "date": "April 15, 2025",
         "link": "#closureDetails"
     },
     {
@@ -23,8 +23,8 @@
     {
         "type": "announcement",
         "title": "Holiday Hours Announcement",
-        "description": "In observance of the upcoming holiday, we will be closing early on April 30th at 2 PM. Please plan accordingly.",
-        "date": "April 10, 2025",
+        "description": "In observance of the upcoming holiday, we will be closing early on April 9th at 2 PM. Please plan accordingly.",
+        "date": "April 9, 2025",
         "link": "#holidayHours"
     }
 ]
