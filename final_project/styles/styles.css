@@ -329,7 +329,7 @@
   
   .contact-link {
     display: inline-flex;
-    align-items: left;
+    justify-content: flex-start;
     text-decoration: none;
     color: var(--dark);
     margin: 10px 0;
